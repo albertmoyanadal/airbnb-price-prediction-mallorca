@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Obsidian
+.obsidian/
+
+# Dades
+code/data/
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
