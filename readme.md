@@ -1,90 +1,69 @@
-# TFM — Flujo de trabajo con Claude Cowork
+# Airbnb Price Prediction in Mallorca
 
-## Estructura del directorio
+Predicting Airbnb listing prices in Mallorca using machine learning and explainable artificial intelligence techniques.
 
-```
-tfm/
-├── brainstorming/       # Sesiones de brainstorming (exportadas de Cowork)
-├── context/             # Documentos de contexto que subes a Claude antes de pedir ayuda
-│   └── tfm_context.md   # ← Actualiza este fichero conforme evolucione el TFM
-├── notes/               # Notas de reuniones (txt, md o pdf)
-├── references/          # PDFs de artículos y libros
-├── latex/
-│   ├── chapters/        # Un .tex por capítulo
-│   ├── figures/         # Imágenes y diagramas
-│   └── bibliography/    # .bib
+## Overview
+
+This repository contains the source code and supporting material for my Master's Thesis in Data Analytics and Business Intelligence.
+
+The objective is to develop predictive models capable of estimating the market price of Airbnb listings in Mallorca from their characteristics, while analysing which features contribute the most to the predicted price.
+
+The project includes:
+
+* Exploratory Data Analysis (EDA)
+* Data cleaning and preprocessing
+* Feature engineering
+* Machine learning models
+* Model interpretation and explainability
+* Scenario analysis ("what-if" simulations)
+
+## Repository structure
+
+```text
+.
+├── brainstorming/
 ├── code/
-│   ├── src/             # Módulos Python reutilizables
-│   ├── notebooks/       # Jupyter notebooks de exploración
-│   └── data/            # Datasets (no subir binarios grandes a git)
-└── outputs/             # Ficheros generados por Claude (borradores, tablas, etc.)
+│   ├── notebooks/
+│   └── src/
+├── context/
+├── latex/
+├── notes/
+├── outputs/
+├── references/
+└── README.md
 ```
 
----
+## Dataset
 
-## Flujo de trabajo con Claude Cowork
+The dataset is provided by **Inside Airbnb** and is **not included** in this repository because of its size.
 
-### 1. Reuniones con el tutor
-1. Toma notas durante la reunión (formato libre: voz → texto, bullet points, etc.)
-2. Guarda el fichero en `notes/` con nombre `YYYY-MM-DD_reunion.md`
-3. Abre Cowork y pide:
-   > "Procesa las notas de hoy en `notes/YYYY-MM-DD_reunion.md`: extrae tareas pendientes, decisiones tomadas y actualiza `context/tfm_context.md`"
+Source:
 
-### 2. Mantener el contexto actualizado
-El fichero `context/tfm_context.md` es el **cerebro del proyecto**: título provisional, objetivo, metodología, estado actual, próximas tareas. Actualízalo tras cada reunión. Al empezar una sesión de trabajo larga, díselo a Claude:
-> "Lee `context/tfm_context.md` y tenlo en cuenta para esta sesión"
+https://insideairbnb.com/get-the-data/
 
-### 3. Escritura en LaTeX
-- Pide borradores de secciones en prosa y luego conviértelos a LaTeX.
-- Para figuras y tablas: proporciona los datos y pide el código TikZ / tabular.
+Download the latest Mallorca dataset and place it in the appropriate data directory before running the notebooks or scripts.
 
-### 4. Código Python
-- Sube notebooks o scripts a `code/` y pide revisión, refactorización o depuración.
-- Para análisis de datos: pega el CSV pequeño en el chat o referencia la ruta.
+## Technologies
 
-### 5. Gestión bibliográfica
-- Guarda los PDFs en `references/`.
-- Pide a Claude que genere entradas `.bib` a partir del PDF o DOI.
+* Python
+* Jupyter Notebook
+* pandas
+* NumPy
+* scikit-learn
+* XGBoost
+* LightGBM
+* CatBoost
+* SHAP
+* LaTeX
 
-### 6. Brainstorming
-- Usa Cowork para sesiones de ideación; exporta el resultado a `brainstorming/YYYY-MM-DD_tema.md`.
+## Project status
 
----
+🚧 Work in progress.
 
-## Skills útiles en Cowork
+This repository is actively updated as the research progresses.
 
-| Tarea | Skill |
-|---|---|
-| Generar documento Word para el tutor | `docx` |
-| Leer/extraer tablas de PDFs de artículos | `pdf` |
-| Crear Excel con resultados experimentales | `xlsx` |
-| Presentación para defensa | `pptx` |
+## License
 
----
+This repository contains the original source code developed for the thesis.
 
-## Convenciones de nombrado
-
-| Tipo | Formato |
-|---|---|
-| Notas de reunión | `notes/YYYY-MM-DD_reunion.md` |
-| Brainstorming | `brainstorming/YYYY-MM-DD_tema.md` |
-| Capítulos LaTeX | `latex/chapters/XX_nombre.tex` |
-| Notebooks | `code/notebooks/YYYY-MM-DD_experimento.ipynb` |
-
----
-
-## Estat del projecte
-
-- Tema aprovat (2026-06-17): predicció de preu d'allotjaments Airbnb a Mallorca.
-- Estat global i decisions: `context/tfm_context.md`.
-- Pla de treball i cronograma (fites de juliol i setembre): `context/pla_treball.md`.
-- Actes de reunions: `notes/`.
-
-## Propers passos immediats
-
-- [ ] Revisió bibliogràfica → registrar a `references/bibliografia.md`.
-- [ ] Comprensió i neteja de les dades (`code/data/`).
-- [ ] Enginyeria de variables (distància al mar).
-- [ ] **Correu de progrés als tutors (~15 juliol).**
-- [ ] **Correu de convocatòria (principis de setembre).**
-- [ ] Crear `latex/main.tex` amb l'estructura base del TFM.
+The Airbnb dataset remains subject to the license provided by Inside Airbnb.
