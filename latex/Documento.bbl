@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hennessy2011}
+John~L. Hennessy and David~A. Patterson.
+\newblock {\em Computer Architecture, Fifth Edition: A Quantitative Approach}.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 5th edition,
+  2011.
+
+\bibitem{Kane}
+Gerry Kane and Joe Heinrich.
+\newblock {\em MIPS RISC Architectures}.
+\newblock Prentice-Hall, Inc., Upper Saddle River, NJ, USA, 1992.
+
+\bibitem{MARS}
+Kenneth Vollmar and Pete Sanderson.
+\newblock {MARS: An Education-oriented MIPS Assembly Language Simulator}.
+\newblock {\em SIGCSE Bull.}, 38(1):239--243, March 2006.
+
+\end{thebibliography}

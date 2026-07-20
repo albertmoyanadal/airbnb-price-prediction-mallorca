@@ -1,0 +1,367 @@
+\documentclass[twocolumn,twoside,a4paper, 10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+\usepackage{jenuia4}
+
+\usepackage{url}
+\usepackage{graphicx}
+%\usepackage{dtklogos}
+
+
+
+
+%
+%  NOTE
+%  The final pdf requires the official cover available at : https://cep.uib.es/es/impresos/#IMP_TFM
+%
+%
+
+\title{Títol Provisional del TFM}
+
+\author{\normalsize 
+{\large Albert Moya Nadal} \\
+ \textbf{Tutor:}  {\large Miquel Miró Nicolau i Biel Moyà Alcover} \\
+Treball de fi de Màster Universitari en Anàlitica de Dades i Intel·ligència de Negoci (MAD2)\\
+Universitat de les Illes Balears \\
+07122 Palma de Mallorca \\
+\url{albert.moya1@estudiant.uib.cat}
+}
+% 
+% % % % % % % % % % % % % % % % % %
+
+\date{}
+
+
+
+\hyphenation{pa-la-bra sa-li-da}
+
+
+
+
+\begin{document}
+
+
+\maketitle
+\thispagestyle{empty}
+
+
+
+% % % % % % % % % % % % % % % % % %
+%         UPDATE IN YOUR CASE        %
+% % % % % % % % % % % % % % % % % %
+\begin{abstract}
+\noindent Esta plantilla usa el estilo de ``Normas de edición de las Jenui'' realizado por Joe Mirò Julìa y Mercedes Marqués. Modificada para su uso en el TFM del MADM por Isaac Lera.
+
+\end{abstract}
+
+\section*{Abstract}
+\noindent  This template is based on the predefined style of ``Normas de edición de las Jenui'' by Joe Mirò Julìa and Mercedes Marqués''. Adaptation to the TFM (MADM) is done by Isaac Lera.\par
+\noindent  \textit{El resumen en inglés es obligatorio.}
+
+
+\begin{keywords}
+One, two, three, four, five
+\end{keywords}
+
+\section{Motivación}
+
+Estas normas son de obligado cumplimiento para todos los alumnos del trabajo de fin de máster. 
+ No cumplir estas normas puede llevar a la no aceptación o a la no 
+publicación de los trabajos. Nótese que algunas distancias son fijas 
+---la longitud y anchura de las columnas, por ejemplo--- mientras que 
+otras son flexibles ---como la distancia entre título y autores---. 
+Si se dice que la distancia es \emph{aproximada} se aceptan pequeñas 
+desviaciones respecto a la norma. 
+
+Aunque hay disponibles formatos en \LaTeX, Word y LibreOffice u OpenOffice para
+asistir el trabajo de los autores, es responsabilidad de éstos
+asegurarse que las normas se siguen.  Si, para asegurarse que todo
+está conforme, se mide sobre una \emph{impresión} del artículo es
+importante asegurarse que el \emph{driver} de la impresora no modifica
+los tamaños: hay algunas que por defecto amplían o reducen lo impreso.
+Para asegurarse, aconsejamos que se use este artículo como referencia.
+
+
+\section{Normas fundamentales \label{sec:fund}} 
+
+\subsection{El cuerpo, la fuente y las líneas}
+
+El \emph{cuerpo} del artículo es una caja de 237~mm de alto y 160~mm
+de ancho.  Esta caja está centrada en la hoja, es decir, los márgenes
+izquierdo y derecho son de 25~mm a izquierda y derecha y los superior
+e inferior son de 31~mm.  Esta caja contendrá el contenido del
+artículo: texto, figuras y cuadros\footnote{Cuadro es la palabra
+adecuada. \emph{Tabla} es un anglicismo.  Para más detalles,
+consúltese el diccionario de la Real Academia
+\url{http://www.rae.es/drae/}}, notas a pie de página, etc.  Se ha
+dejado espacio fuera del cuerpo para que el maquetador coloque las
+cabeceras y números de página.  Esto significa que los autores no
+deben preocuparse por esto y que es extremadamente importante no 
+salir del cuerpo bajo ninguna circunstancia.
+
+El cuerpo se divide en dos columnas de 76,5~mm de ancho cada una 
+separadas por 7~mm. El texto es de fuente Times y de tamaño 10~puntos. 
+Para \emph{enfatizar} alguna palabra o frase debe utilizarse la 
+cursiva. También debe utilizarse para indicar que alguna palabra está 
+en un idioma que no es el español. El texto debe quedar justificado a 
+ambos márgenes. En la última página las columnas deben quedar 
+equilibradas.
+Un inicio de párrafo queda indicado porque la primera palabra está
+sangrada\footnote{\emph{Indentado} es otro anglicismo.} 3,5~mm.
+
+\begin{table*}
+	\begin{center}
+	\begin{tabular}{p{5.2cm}p{4.5cm}cc}
+		\textbf{Título} & \textbf{Autores} & \textbf{Edición} & 
+		\textbf{Citas (Heterocitas)}\\\hline
+		Niveles de Competencia de los Objetivos Formativos en las 
+		Ingenierías & Miguel Valero-Garcia y Juan José Navarro & 2001 
+		& 21 (18) \\\hline
+		Formulación de los Objetivos de una Asignatura en Tres Niveles
+		Jerárquicos & Juan José Navarro, Miguel Valero-Garcia, Fermín
+		Sánchez Carracedo y Jordi Tubella & 2000 & 18 (8) \\\hline
+		¿Cómo serán las asignaturas del EEES? & Fermín Sánchez
+		Carracedo & 2005 & 10 (6) \\\hline
+		Evaluación continuada a un coste razonable & Miguel
+		Valero-Garcia, Luís M. Díaz de Cerio & 2002 & 9 (9) \\\hline
+		Hacia la Evaluación Continua Automática de Prácticas de
+		Programación & Juan Carlos Rodríguez del Pino, Margarita Díaz
+		Roca, Zenón J. Hernández Figueroa y José Daniel González
+		Domínguez & 2007 & 8 (7) 
+	\end{tabular}
+	\end{center}
+	\caption{\label{tab:mascit}Artículos más citados en las Jenui.}
+\end{table*}
+
+\subsection{Títulos y apartados}
+
+El título de la obra debe estar a 18~puntos, en negrita y centrado.
+Los nombres de autores deben estar a 12~puntos, mientras que sus
+afiliaciones a tamaño normal (10~puntos).  El título empieza a 10~mm
+del borde superior de la caja, es decir, en estas páginas el margen
+superior es de 41~mm. Es muy importante dejar este espacio adicional 
+ya que el maquetador lo necesita para colocar la información 
+editorial del artículo.  La separación entre título y autores es de unas
+dos líneas (8~mm).  Esta distancia es la que debe dejarse
+aproximadamente entre el final del título y el principio del texto. 
+
+Si hay más de un autor puede organizarse su información en columnas, 
+tal y como está en este documento. Pero hay restricciones en el uso 
+de columnas que deben observarse.
+\begin{itemize}
+	\item Sólo pueden usarse columnas si las filiaciones son 
+	diferentes. Si todos los autores son de la misma filiación deben 
+	separarse sus nombres por comas y usar una única dirrección.
+	
+	\item Se desaconseja el uso de 3 columnas y se prohibe el uso de 
+	más de 3 columnas. Si los autores son de más de 3 filiaciones 
+	diferentes deben usarse superíndices, como se muestra en la 
+	Figura~\ref{fig:tit}.
+\end{itemize}
+
+\begin{figure*}
+	\begin{center}
+		\includegraphics[scale = 0.6]{figures/titulo.pdf}
+	\end{center}
+	\caption{\label{fig:tit} Ejemplo de título usando superíndices}
+\end{figure*}
+
+Los títulos de los apartados deben escribirse en 14~puntos y negrita, y 
+deben ir numerados. Los de los subapartados deben escribirse a 12~puntos 
+en negrita y deben numerarse con número de apartado y 
+subapartado. En ambos casos las líneas de título van alineadas a la 
+izquierda. Los títulos de apartados y subapartados no pueden acabar 
+una columna.
+
+Todos los títulos deben usar mayúsculas sólo si está requerido
+gramaticalmente.  Debe ser por tanto ``Estudio de los efectos del
+primer curso de programación en Ingeniería Informática'' y no
+``Estudio de los Efectos del Primer Curso de Programación en
+Ingeniería Informática''.
+
+Desaconsejamos fuertemente el uso de subsubapartados y apartados
+menores: una excesiva división del texto hace que el flujo de la prosa
+quede muy penalizada y la lectura se hace más dificultosa y
+desagradable.  Si no se encuentra una solución mejor, los títulos
+deben estar en 10~puntos y negrita y no ir numerados.
+
+\section{Extensión}
+
+El número máximo de páginas que se pueden utilizar es de 8~páginas para las ponencias 
+y para las descripciones de los recursos docentes, y de 4~páginas para los pósteres 
+(en ediciones anteriores, los pósteres estaban limitados a 2~páginas). 
+Es imprescindible que los autores utilicen el formato y se ajusten al espacio ya 
+desde la primera versión que se someta al proceso de revisión. Lo contrario implicaría 
+el rechazo de la contribución.
+
+\section{Listas}
+
+
+Cada elemento de la lista va precedido de un símbolo o un número y 
+el texto de la lista usa de una línea más estrecha que la del texto. 
+Las normas de edición de las listas se muestran a continuación.
+
+\begin{itemize}
+	\item Los símbolos que preceden a cada elemento de la lista son 
+	números en el caso de listas enumeradas o \emph{balas} 
+	($\bullet$) si la lista no está enumerada.
+	
+	\item La distancia del margen izquierdo del texto de la lista al
+	margen izquierdo de la columna (el texto normal) es de 7~mm.  El
+	margen derecho de la lista es el mismo que el margen derecho de la
+	columna. Es decir, que la anchura de texto de la lista es de 69,5~mm.
+	
+	\item La distancia del extremo derecho del símbolo al texto de la 
+	lista es de 1,5 mm. Los números crecen hacia la izquierda: si hay 
+	un número de dos dígitos, el segundo dígito acaba a 1,5 mm del 
+	texto de la lista.
+	
+	\item La distancia adicional del primer elemento de la lista al texto que 
+	le precede es aproximadamente de 1,4~mm. Esta también es la distancia adicional del último 
+	elemento de la lista al texto que le sucede.
+	
+	\item Está prohibido tener más de un nivel de 
+	listas. Es decir, no se pueden tener listas dentro de listas.
+\end{itemize}
+
+\section{Figuras y cuadros}
+
+Las figuras y los cuadros pueden ir dentro de una columna (anchura 
+máxima 76,5~mm) o dentro del cuerpo (anchura máxima 160~mm). En ambos 
+casos la figura o el cuadro van centrados dentro de la columna o el 
+cuerpo. Ambas van numeradas y tienen numeraciones independientes. El 
+pie de figura o cuadro empieza con \emph{Figura n:} o \emph{Cuadro 
+n:} y usa texto normal a 10~puntos. El pie  va separado 
+aproximadamente por la altura de una línea (4~mm) a la figura o 
+cuadro y está centrado. La distancia entre el pie y el texto es de 
+aproximadamente dos líneas (9~mm).
+
+\begin{figure}
+\begin{center}
+	\includegraphics[width = \linewidth]{figures/mediaref.pdf}
+\end{center}
+
+\vspace{-6ex}
+	\caption{\label{fig:medias} Número medio de referencias por 
+	artículo en las 15 ediciones de las Jenui.}
+\end{figure}
+
+Si el objeto está dentro de una columna puede ir en cualquier lugar 
+de la misma, pero si ocupa ambas columnas sólo puede ir en la parte 
+superior o inferior de la página.
+
+Es muy importante, y se mirará con mucha atención, que las figuras o 
+cuadros no salgan de los márgenes de la columna y del cuerpo.
+\begin{figure*}
+	\begin{center}
+	\includegraphics[width = 0.8\linewidth]{figures/diagrLargo.jpg}
+	\end{center}
+	\caption{Diagrama en ancho de dos columnas.}
+\end{figure*}
+
+
+
+\section{Bibliografía}
+
+Excepto en muy raras ocasiones, un documento acaba con 
+una lista de referencias. Esta sección se titula \emph{Referencias} y su 
+encabezamiento recibe el tratamiento de sección (14~puntos en 
+negrita) pero no va numerada. Los elementos de la lista de 
+referencias van precedidos de un número entre corchetes. El orden de 
+las referencias es alfabético por el apellido del primer autor, con el año de 
+publicación como desempate.  Por ejemplo, un artículo de José García 
+de 1986 va por delante de uno de José García y Pedro Quintero de 1988.	
+
+En el texto se utiliza el número de la referencia, también entre 
+corchetes. Hay tres cuestiones a tener en cuenta: (a) El número de 
+referencia no puede empezar una línea, hay que poner un ``blanco 
+duro'' entre el número de referencia y el texto que lo precede; (b) 
+Si hay varias referencias juntas debe usarse un único par de 
+corchetes: debe ser ``[2, 7, 14]'' y no ``[2][7][14]''; (c) Si hay 
+varias referencias, deben ir en orden numérico ascendente: debe ser  
+``[2, 7, 14]'' y no ``[14, 2, 7]''.
+
+El formato de la bibliografía casi merece un artículo propio. Si se 
+usa un programa bibliográfico como, o EndNote no es necesario 
+preocuparse de mucho. Si en cambio se crea la bibliografía a mano 
+recomendamos que se mire este artículo o un libro adecuado como 
+referencia y que se sigan las siguientes normas:
+%
+\begin{itemize}
+	\item Se debe ser consistente.  Por ejemplo si en una entrada se
+	pone ``Actas de las XVII Jornadas de Enseñanza Universitaria de la
+	Informática'' en otra no puede ponerse ``Jenui 2012'' y en otra
+	``Actas del Jenui'98''.  Si en una entrada el título de un libro
+	va en cursiva, en otra entrada no puede ir en letra normal.  No
+	importa tanto cómo se escriba sino que siempre se escriba igual.
+	
+	\item Todo debe ir en español.  Si se importa la bibliografía de
+	otra fuente (o se usa) es posible que se importen palabras
+	en inglés (``J. García \emph{and} P. Quintero, \emph{editors}'').
+	Debe cambiarse al español\footnote{Usuarios de  editad el
+	archivo .bbl justo antes de la última compilación.}.
+	
+	\item Deben indicarse los nombres de todos los autores tal y 
+	como lo escriben en el artículo. Si en el artículo los autores 
+	aparecen como ``José García Pérez, Pedro Quintero Madariaga y 
+	\'Alvaro Nogales Echagüe'' en el texto puede ser adecuado escribir 
+	``Tal y como exponen García \emph{et al.}~[5]'' pero en la lista 
+	de referencias no puede aparecer ``García \emph{et al.}'' ni 
+	siquiera ``J. García, P. Quintero y A. Nogales''. 
+	
+	\item Un elemento que no tiene ni título ni autor, no pertenece a 
+	la bibliografía. En esta categoría entran muchas páginas web y 
+	algunos documentos oficiales. Por ejemplo, es mucho mejor 
+	escribir ``Podemos encontrar más información en la web de Moodle 
+	(\url{http://www.moodle.org})'' que ``Podemos encontrar más 
+	información en [11]'' y al ir el lector a la lista de referencias 
+	encontrar ``[11] \url{http://www.moodle.org}''. Si la URL es demasiado 
+	larga para que quepa cómodamente en una columna, entonces mejor 
+	ponerlo como pie de página. 
+	
+	\item Otro tipo de documento que es mejor no poner como referencia 
+	bibliográfica son las leyes. Basta con escribir ``Según la Ley de 
+	Reformas Sugestionadas (Ley 7/2012 de 29 de octubre)'': esta 
+	información es todo lo que se necesita para encontrarla con 
+	facilidad en el BOE.
+\end{itemize}
+
+La lista de referencias usa todo el ancho de la columna.  El número 
+entre corchetes empieza en el margen de la columna, mientras que el margen
+del texto de la referencia está a 9~mm del margen de la columna.
+
+Ejemplos de citación de referencias:~\cite{Hennessy2011,MARS} o simplemente~\cite{Kane}
+\section{Conclusiones}
+
+El documento con el que estás trabajando ahora 
+mismo contiene todos los estilos que necesitas ya definidos de manera que 
+cumplen las normas que aquí se han descrito.
+
+Agradecemos desde estas líneas la aportación realizada por los comités 
+organizadores de las ediciones anteriores de las Jenui que han elaborado 
+las plantillas sobre las que hemos trabajado para producir la plantilla 
+con las actuales normas.
+
+
+\appendix
+
+\section{Uso de apéndices}
+Es recomendable el uso de apéndices cuando se pretende aclarar una parte del trabajo paralela a la principal línea argumental, por ejemplo: la configuración de una determinada herramienta, la puesta a punto de un entorno, los resultados secundarios de un experimento, etc.
+
+\section{Otro ejemplo de apéndice}
+En la documentación no es recomendable el uso excesivo de apéndices.
+
+
+
+\bibliographystyle{plain}
+\bibliography{bibliografia} %Update in your case
+
+
+
+\end{document}
+
+
+

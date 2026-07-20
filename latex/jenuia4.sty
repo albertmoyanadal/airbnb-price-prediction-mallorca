@@ -1,0 +1,92 @@
+\usepackage{times}
+\usepackage{flushend}
+
+\usepackage{titlesec}
+
+
+%Redifinicion del titulo para tener negritas
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE\bf \@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+%Dimensiones papel
+\usepackage[a4paper, includeheadfoot,
+             columnsep = 2em,
+             footskip = 10 mm, headsep = 4 mm, headheight = 4 mm,
+             inner = 1.5 cm, outer = 1.5 cm, 
+			 top = 2.3 cm, bottom = 2.1 cm]{geometry}
+
+%Keywords
+
+\newcommand{\spanishKeywordName}{Palabras clave:}
+\newenvironment{keywords}
+{ \vspace{5 mm} \smallskip \noindent \textbf{\spanishKeywordName}}
+
+
+
+%Listas
+\usepackage{enumitem}
+\setlist{noitemsep, topsep = 1ex}
+\renewcommand{\labelitemi}{\textbullet}
+\renewcommand{\labelitemii}{\textendash}
+\renewcommand{\labelitemiii}{\textasteriskcentered}
+\renewcommand{\labelitemiv}{\textperiodcentered}
+
+%\renewcommand{\labelitemi}{\textbullet} %Para restaurar los símbolos de las listas modificados por spanish babel
+
+
+%Inclusión de Apéndices 
+\renewcommand\appendix{
+	\renewcommand\thesection{\appendixname\ \Alph{section}}
+  	\setcounter{section}{0}%
+}
+
+
+
+%Bibliografia
+\makeatletter
+\newdimen\bibindent
+\setlength\bibindent{1.5em}
+\newdimen\bibspacing
+\setlength\bibspacing\z@
+\renewenvironment{thebibliography}[1]{%
+  \section*{\refname
+        \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep 
+            \itemsep\z@skip    % should this be commented out?
+            \parsep\z@skip     % should this be commented out?
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy\clubpenalty4000\widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\setlength{\bibspacing}{\baselineskip}
+
+\pagestyle{empty}
+
+
