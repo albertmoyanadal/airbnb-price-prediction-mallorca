@@ -24,14 +24,14 @@ Cercar treballs similars, acadèmics o divulgatius, sobre predicció de preus d'
 - [x] Desar PDFs a `references/` i registrar-los a `references/bibliografia.md`.
 
 ### B2 — Comprensió de les dades
-- [ ] Inventari de variables de `listings.csv` (tipus, valors, mancances).
-- [ ] Revisar `calendar.csv` i `reviews.csv` (rol secundari/auxiliar).
-- [ ] Documentar la variable objectiu `price` i el seu format.
+- [x] Inventari de variables de `listings.csv` (tipus, valors, mancances).
+- [x] Revisar `calendar.csv` i `reviews.csv` (rol secundari/auxiliar).
+- [x] Documentar la variable objectiu `price` i el seu format.
 
 ### B3 — Neteja de dades (*data cleaning*)
-- [ ] Neteja del preu (format, moneda, *outliers*).
-- [ ] Tractament de valors mancants.
-- [ ] Codificació de variables categòriques.
+- [x] Neteja del preu (format, moneda, *outliers*).
+- [x] Tractament de valors mancants.
+- [x] Codificació de variables categòriques.
 
 ### B4 — Enginyeria de variables (*feature engineering*)
 - [ ] **Distància al mar:** mapejar la línia de costa de Mallorca i calcular la distància de cada allotjament (lat/lon) al mar.

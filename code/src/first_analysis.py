@@ -14,6 +14,7 @@ import pandas as pd
 
 # Directori de les dades
 input_csv = "code/data/data_raw/listings.csv"
+#input_csv = "code/data/data_cleaning/listings_step5.csv"
 df = pd.read_csv(input_csv)
 
 # 3. MOSTRAR PER PANTALLA EL NOMBRE DE FILES I COLUMNES
